@@ -2,36 +2,63 @@ export default function Contact(){
 
 return(
 
-<section id="contact" className="py-24 px-10">
+<section id="contact" className="py-24 bg-gray-100">
 
-<h2 className="text-4xl font-bold text-center mb-10">
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-bold text-center mb-12">
 Contact Us
 </h2>
 
-<div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+<div className="grid md:grid-cols-2 gap-12">
 
-<div>
+{/* Contact Details */}
 
-<h3 className="text-xl font-semibold mb-4">
+<div className="space-y-6">
+
+<h3 className="text-2xl font-semibold">
 St Antonio Waterfront
 </h3>
 
-<p>Assolna, South Goa</p>
-<p>Phone: +91 XXXXXXXX</p>
-<p>Email: info@stantoniowaterfront.com</p>
-
-<p className="mt-4">
-Enjoy riverside dining, fresh seafood, live music and family outings beside the Sal River.
+<p>
+📍 Assolna, South Goa
 </p>
+
+<p>
+📞 +91 9876543210
+</p>
+
+<p>
+📧 info@stantoniowaterfront.com
+</p>
+
+<p>
+🕒 Open Daily: 12 PM – 11 PM
+</p>
+
+<a
+href="https://maps.google.com"
+target="_blank"
+className="inline-block bg-black text-white px-6 py-3 rounded-lg mt-4 hover:bg-gray-800"
+>
+View on Google Maps
+</a>
 
 </div>
 
+{/* Google Map */}
+
+<div>
+
 <iframe
 src="https://maps.google.com/maps?q=assolna%20goa&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300"
-className="rounded-lg"
+className="w-full h-96 rounded-lg"
+loading="lazy"
 />
+
+</div>
+
+</div>
 
 </div>
 
