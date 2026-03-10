@@ -14,7 +14,7 @@ playsInline
 className="absolute w-full h-full object-cover hidden md:block"
 >
 
-<source src="/videos/hero.mp4" type="video/mp4"/>
+<source src="/videos/Hero.mp4" type="video/mp4"/>
 
 </video>
 
