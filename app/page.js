@@ -7,6 +7,7 @@ import Instagram from "../components/Instagram"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Reviews from "../components/Reviews"
+import Parallax from "../components/Parallax"
 import WhatsAppButton from "../components/WhatsAppButton"
 
 export default function Home(){
@@ -20,6 +21,7 @@ export default function Home(){
       <About/>
       <Gallery/>
       <MenuPro/>
+      <Parallax/>
       <Instagram/>
       <Contact/>
       <Footer/>
