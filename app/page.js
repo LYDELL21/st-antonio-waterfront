@@ -6,6 +6,7 @@ import MenuPro from "../components/MenuPro"
 import Instagram from "../components/Instagram"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import Reviews from "../components/Reviews"
 import WhatsAppButton from "../components/WhatsAppButton"
 
 export default function Home(){
@@ -23,6 +24,7 @@ export default function Home(){
       <Contact/>
       <Footer/>
       <WhatsAppButton/>
+      <Reviews/>
 
     </main>
 
