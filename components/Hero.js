@@ -1,68 +1,31 @@
-"use client"
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="h-screen bg-cover bg-center relative"
+      style={{ backgroundImage: "url('/images/hero.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 flex items-center justify-center">
 
-import Slider from "react-slick"
+        <div className="text-center text-white px-10 py-8 backdrop-blur-md bg-black/30 rounded-xl">
 
-export default function Hero(){
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            St Antonio Waterfront
+          </h1>
 
-const settings = {
-dots:true,
-infinite:true,
-speed:800,
-slidesToShow:1,
-slidesToScroll:1,
-autoplay:true,
-autoplaySpeed:4000
-}
+          <p className="text-lg mb-6">
+            Riverside Dining in Assolna, South Goa
+          </p>
 
-return(
+          <a
+            href="#contact"
+            className="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition"
+          >
+            Book a Table
+          </a>
 
-<section id="home">
-
-<Slider {...settings}>
-
-<div>
-<div
-className="h-screen bg-cover bg-center flex items-center justify-center"
-style={{backgroundImage:"url('/images/hero.jpg')"}}
->
-
-<div className="bg-black/50 p-10 rounded-xl text-white text-center">
-
-<h1 className="text-6xl font-bold mb-4">
-St Antonio Waterfront
-</h1>
-
-<p className="text-xl mb-6">
-Riverside Dining in Assolna, South Goa
-</p>
-
-<button className="bg-yellow-400 text-black px-8 py-3 rounded-full">
-Book a Table
-</button>
-
-</div>
-
-</div>
-</div>
-
-<div>
-<div
-className="h-screen bg-cover bg-center"
-style={{backgroundImage:"url('/images/gallery1.jpg')"}}
-/>
-</div>
-
-<div>
-<div
-className="h-screen bg-cover bg-center"
-style={{backgroundImage:"url('/images/gallery2.jpg')"}}
-/>
-</div>
-
-</Slider>
-
-</section>
-
-)
-
+        </div>
+      </div>
+    </section>
+  )
 }

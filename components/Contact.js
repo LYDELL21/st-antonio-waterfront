@@ -1,69 +1,48 @@
-export default function Contact(){
+export default function Contact() {
 
-return(
+  return (
 
-<section id="contact" className="py-24 bg-gray-100">
+    <section id="contact" className="py-24 bg-gray-100">
 
-<div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
-<h2 className="text-4xl font-bold text-center mb-12">
-Contact Us
-</h2>
+        <div className="space-y-6">
 
-<div className="grid md:grid-cols-2 gap-12">
+          <h2 className="text-4xl font-bold">
+            Contact Us
+          </h2>
 
-{/* Contact Details */}
+          <div className="space-y-4 text-lg">
 
-<div className="space-y-6">
+            <p>📍 Assolna, South Goa</p>
 
-<h3 className="text-2xl font-semibold">
-St Antonio Waterfront
-</h3>
+            <p>📞 +91 9876543210</p>
 
-<p>
-📍 Assolna, South Goa
-</p>
+            <p>📧 info@stantoniowaterfront.com</p>
 
-<p>
-📞 +91 9876543210
-</p>
+            <p>🕒 Open Daily: 12 PM – 11 PM</p>
 
-<p>
-📧 info@stantoniowaterfront.com
-</p>
+          </div>
 
-<p>
-🕒 Open Daily: 12 PM – 11 PM
-</p>
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800"
+          >
+            View on Google Maps
+          </a>
 
-<a
-href="https://maps.google.com"
-target="_blank"
-className="inline-block bg-black text-white px-6 py-3 rounded-lg mt-4 hover:bg-gray-800"
->
-View on Google Maps
-</a>
+        </div>
 
-</div>
+        <iframe
+          src="https://maps.google.com/maps?q=assolna%20goa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          className="w-full h-96 rounded-lg"
+        />
 
-{/* Google Map */}
+      </div>
 
-<div>
+    </section>
 
-<iframe
-src="https://maps.google.com/maps?q=assolna%20goa&t=&z=13&ie=UTF8&iwloc=&output=embed"
-className="w-full h-96 rounded-lg"
-loading="lazy"
-/>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-)
+  )
 
 }

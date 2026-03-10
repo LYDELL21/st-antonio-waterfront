@@ -1,82 +1,70 @@
 export default function Menu() {
 
-return (
+  return (
 
-<section id="menu" className="py-24 bg-gray-100">
+    <section id="menu" className="py-24 px-6 bg-gray-100">
 
-<h2 className="text-4xl font-bold text-center mb-16">
-Popular Dishes
-</h2>
+      <h2 className="text-4xl font-bold text-center mb-12">
+        Popular Dishes
+      </h2>
 
-<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
 
-<div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+        <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition text-center">
 
-<img
-src="/images/food1.png"
-className="w-full h-64 object-cover"
-/>
+          <img
+            src="/images/food1.png"
+            className="rounded-lg mb-4 hover:scale-105 transition"
+          />
 
-<div className="p-6 text-center">
+          <h3 className="text-xl font-semibold">
+            Calamari Rings
+          </h3>
 
-<h3 className="text-xl font-semibold mb-2">
-Calamari Rings
-</h3>
+          <p className="text-gray-600">
+            Fresh fried squid served with sauce
+          </p>
 
-<p className="text-gray-600">
-Fresh fried squid served with sauce
-</p>
+        </div>
 
-</div>
+        <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition text-center">
 
-</div>
+          <img
+            src="/images/food2.png"
+            className="rounded-lg mb-4 hover:scale-105 transition"
+          />
 
-<div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+          <h3 className="text-xl font-semibold">
+            Chicken Tandoori
+          </h3>
 
-<img
-src="/images/food2.png"
-className="w-full h-64 object-cover"
-/>
+          <p className="text-gray-600">
+            Traditional grilled chicken with spices
+          </p>
 
-<div className="p-6 text-center">
+        </div>
 
-<h3 className="text-xl font-semibold mb-2">
-Chicken Tandoori
-</h3>
+        <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition text-center">
 
-<p className="text-gray-600">
-Traditional grilled chicken with spices
-</p>
+          <img
+            src="/images/food3.png"
+            className="rounded-lg mb-4 hover:scale-105 transition"
+          />
 
-</div>
+          <h3 className="text-xl font-semibold">
+            Fish Rava Fry
+          </h3>
 
-</div>
+          <p className="text-gray-600">
+            Classic Goan style crispy fish fry
+          </p>
 
-<div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+        </div>
 
-<img
-src="/images/food3.png"
-className="w-full h-64 object-cover"
-/>
+      </div>
 
-<div className="p-6 text-center">
+    </section>
 
-<h3 className="text-xl font-semibold mb-2">
-Fish Rava Fry
-</h3>
-
-<p className="text-gray-600">
-Classic Goan style crispy fish fry
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-)
+  )
 
 }

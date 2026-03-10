@@ -6,49 +6,43 @@ import "yet-another-react-lightbox/styles.css"
 
 export default function Gallery(){
 
-const [open,setOpen] = useState(false)
-const [index,setIndex] = useState(0)
-
 const images=[
-"/images/gallery1.avif",
-"/images/gallery2.jpg",
-"/images/gallery3.jpg",
-"/images/gallery4.jpg",
-"/images/gallery5.webp",
-"/images/gallery6.webp"
+{src:"/images/gallery1.avif"},
+{src:"/images/gallery2.JPG"},
+{src:"/images/gallery3.jpg"},
+{src:"/images/gallery4.jpg"},
+{src:"/images/gallery5.webp"},
+{src:"/images/gallery6.webp"}
 ]
+
+const [index,setIndex] = useState(-1)
 
 return(
 
-<section id="gallery" className="py-24 px-10">
+<section id="gallery" className="py-24 bg-black text-white">
 
 <h2 className="text-4xl font-bold text-center mb-12">
 Our Gallery
 </h2>
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
 {images.map((img,i)=>(
-
 <img
 key={i}
-src={img}
-className="rounded-lg hover:scale-105 transition duration-300 cursor-pointer"
-onClick={()=>{
-setIndex(i)
-setOpen(true)
-}}
+src={img.src}
+onClick={()=>setIndex(i)}
+className="rounded-lg cursor-pointer hover:scale-105 transition duration-300"
 />
-
 ))}
 
 </div>
 
 <Lightbox
-open={open}
-close={()=>setOpen(false)}
-slides={images.map((img)=>({src:img}))}
+open={index >= 0}
 index={index}
+close={()=>setIndex(-1)}
+slides={images}
 />
 
 </section>
